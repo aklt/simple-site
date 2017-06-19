@@ -1,0 +1,33 @@
+{
+  "all": {
+    "home": "Hjem",
+    "about": "Om",
+    "contact": "Kontakt"
+  },
+  "about": {
+    "title": "Dette er siden om simpel site",
+    "h1": "Om denne side",
+    "aboutp": "Denne tekst beskriver kort hvordan der er ting og sager på dette site"
+  },
+  "index": {
+    "title": "Velkommen til simpel site",
+    "h1": "Halløj der",
+    "name": "Navn",
+    "age": "Alder",
+    "email": "Email",
+    "food": "Yndlings mad",
+    "location": "Lokation",
+    "earth": "Jorden",
+    "moon": "Månen",
+    "mars": "Mars",
+    "message": "Meddelelse",
+    "when": "Tidspunkt",
+    "submit": "Indsend"
+  },
+  "contact": {
+    "title": "Kontakt info for simpel site",
+    "h1": "Find en kontakt her",
+    "contactp": "Henvendelser til telefon 12345678"
+  }
+}
+

@@ -1,0 +1,33 @@
+{
+  "all": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "This is the about page",
+    "h1": "About this site",
+    "aboutp": "This text describes some of the bits and pieces that can be found here"
+  },
+  "index": {
+    "title": "Welcome to simple site",
+    "h1": "Hello there",
+    "name": "Name",
+    "age": "Age",
+    "email": "Email",
+    "food": "Favourite food",
+    "earth": "Earth",
+    "location": "Location",
+    "moon": "Moon",
+    "mars": "Mars",
+    "message": "Message",
+    "when": "When",
+    "submit": "Submit"
+  },
+  "contact": {
+    "title": "Contact for simple site",
+    "h1": "Find contacts here",
+    "contactp": "Please call 12345678 for inquiries"
+  }
+}
+

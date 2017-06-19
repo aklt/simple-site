@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title id="title">A simple site</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="style.css" type="text/css" /> 
+  </head>
+  <body>
+    <div class="head">
+      <h1 class="iblock" id="h1">Hello to the world!</h1>
+      <ul class="iblock lang">
+        <li><a id="lang-en" href="javascript:">English</a></li>
+        <li><a id="lang-da" href="javascript:">Dansk</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="nav">
+        <ul>
+          <li><a href="index.html" id="home">Home</a></li>
+          <li><a href="about.html" id="about">About</a></li>
+          <li><a href="contact.html" id="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="body">
+        <form id="form0" action="/api/message" method="get" accept-charset="utf-8">
+          <p>
+            <label for="t0" id="name">
+              Name
+            </label>
+            <input type="text" id="t0" required />
+          </p>
+          <p>
+            <label for="t1" id="age">
+              Age
+            </label>
+            <input type="number" id="t1" required />
+          </p>
+          <p>
+            <label for="t2" id="email">
+              Email
+            </label>
+            <input type="email" id="t2" required />
+          </p>
+          <p>
+            <label for="t3" id="food">
+              Favourite Food
+            </label>
+            <input type="text" id="t3" pattern="[a-z0-9]+" required />
+          </p>
+          <p>
+            <label for="t4" id="location">
+              Location
+            </label>
+            <select>
+              <option value="Earth" id="earth">Earth</option> 
+              <option value="Moon" id="moon">Moon</option> 
+              <option value="Mars" id="mars">Mars</option> 
+            </select>
+          </p>
+          <p>
+            <label for="t5" id="when">
+              When
+            </label>
+            <input type="datetime" id="t5" required />
+          </p>
+          <p>
+            <label for="t6" id="message">
+              Your message
+            </label>
+            <textarea id="t6" required>
+            </textarea>
+          </p>
+          <p>
+            <label for="t7" id="message">
+              Favourite URL
+            </label>
+            <input type="url" spellcheck="disable" id="t7" required />
+          </p>
+          <p class="center">
+            <button id="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script> 
+  </body>
+</html>

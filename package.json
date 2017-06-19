@@ -1,0 +1,13 @@
+{
+  "name": "simple-site",
+  "version": "0.0.1",
+  "description": "A simple site with 2 langugages",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "Anders <anders@bladre.dk>",
+  "dependencies": {
+    "normalizecss": "^3.0.0"
+  }
+}

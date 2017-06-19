@@ -1,0 +1,202 @@
+
+@import "node_modules/normalizecss/normalize";
+
+$bg:            #aaa;
+$fg:            #339;
+$link:          #15a;
+$bg-decoration: #abe;
+$bg-error:      #bcc;
+$border:        #489;
+$valid:         #eee;
+$invalid:       #e55;
+$required:      #aa0;
+
+$left-line: 130px;
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2 {
+  margin: auto;
+  padding: 1em;
+}
+
+a,
+a:visited {
+  color: $link;
+  text-decoration: none;
+}
+
+.hide {
+  display: none;
+}
+
+ul.lang {
+  margin: 0 auto;
+  list-style-type: none;
+  list-style-position: middle;
+
+  & li {
+    display: inline;
+  }
+}
+
+input:valid {
+  background-color: $valid;
+}
+
+input:invalid {
+  background-color: $invalid;
+}
+
+input:required {
+  background-color: $required;
+}
+
+// {{{1 Plain styles
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  text-align: center;
+  background-color: $bg-decoration;
+  color: $fg;
+}
+
+.nav {
+  height: 100%;
+
+  margin: {
+    left: 0;
+    right: 1em;
+  }
+
+  padding: {
+    left: 0;
+    right: 1em;
+  }
+
+  ul {
+    list-style-type: none;
+    list-style-position: inside;
+  }
+}
+
+.body {
+  width: 80%;
+  height: 100%;
+  margin: 1em;
+
+  label {
+    display: inline-block;
+    width: 80px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg;
+    border: 2px solid $border;
+
+    button {
+      width: 100px;
+    }
+
+    textarea,
+    input {
+      margin: 0;
+      padding: 0;
+      vertical-align: top;
+      min-width: 210px;
+    }
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+// 1}}} Plain styles
+
+// {{{1 < 400px
+@media screen and (max-width: 400px) {
+  h1 {
+    font: {
+      size: 120%;
+    }
+  }
+
+  .nav {
+    ul {
+      width: 100%;
+      margin: 0 auto;
+      padding: {
+        top: 1em;
+      }
+    }
+
+    li {
+      display: inline;
+    }
+  }
+
+  .body {
+    width: 100%;
+
+    label {
+      display: inline-block;
+      width: 90px;
+      text-align: left;
+    }
+
+    form {
+      button {
+        width: 100px;
+      }
+
+      textarea,
+      input {
+        margin: 0;
+        padding: {
+          left: 1em;
+        }
+
+        vertical-align: top;
+        min-width: 80%;
+        max-width: 90%;
+      }
+    }
+  }
+}
+// 1}}} < 400px
+
+// {{{1 > 400px
+@media screen and (min-width: 401px) {
+  .nav {
+    position: absolute;
+    left: 0;
+  }
+
+  .body {
+    min-width: 401px;
+    max-width: 540px;
+    margin: 0 auto;
+    padding-left: $left-line;
+
+    label {
+      width: 120px;
+      text-align: right;
+    }
+  }
+}
