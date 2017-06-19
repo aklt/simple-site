@@ -8,7 +8,7 @@ all: style.css
 .PHONY: dev clean
 
 dev:
-	freshen
+	npm run freshen
 
 clean:
 	rm -f style.css
